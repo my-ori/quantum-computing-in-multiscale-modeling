@@ -1,0 +1,28 @@
+
+ python 1Ddynamic_BCOW_VQLS_boundary_reduced_pennylane.py \
+  --no-pad --no-device-fallback \
+  --target direct-c \
+  --device lightning.gpu \
+  --energy-estimator pauli_hamiltonian \
+  --compare-direct \
+  --n1 5 --n2 2 --h-factor 5 --pulse-atoms 3 \
+  --t 5 \
+  --restart-window 0.1 \
+  --segments 1 \
+  --taylor-order 4 \
+  --coefficient-tol 1e-10 \
+  --max-vqls-qubits 12 \
+  --ansatz real_ry_identity \
+  --layers 8 \
+  --init-scale 0.0 \
+  --initial-state-guess rhs \
+  --theta-warm-start previous \
+  --theta-jitter 0.01 \
+  --optimizer scipy-lbfgsb \
+  --maxiter 300 \
+  --residual-target 1e-2 \
+  --window-retries 2 \
+  --progress-interval 25 \
+  --exact-every 10 \
+  --output-prefix boundary_reduced
+

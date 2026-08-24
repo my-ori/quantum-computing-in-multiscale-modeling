@@ -1,0 +1,1 @@
+python pennylane_vqls_shot_free.py --md-atoms 850 --fe-elems 177 --u-right 87 --device lightning.gpu --energy-estimator pauli_hamiltonian --optimizer scipy-lbfgsb --initial-state-guess index_ramp --maxiter 100 --output-prefix f1

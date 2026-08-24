@@ -1,0 +1,3 @@
+
+python case3_carleman_pennylane_vqls_direct_signed.py   --n-steps 150   --device lightning.gpu   --energy-estimator pauli_hamiltonian   --optimizer scipy-lbfgsb   --initial-state-guess uniform   --maxiter 300   --classical-check-interval 1  --output-prefix 150steps_result
+ 
