@@ -1,0 +1,2 @@
+trajectory,time_interval_ps,update_or_evaluation_point,max_eta,terminal_eta,max_eta_relative,terminal_eta_relative
+Retained VQLS terminal lifted state,terminal-only at 0.4,Saved Y_final from retained 200-step artifact,,0.006068525429713765,,0.9961250889771458

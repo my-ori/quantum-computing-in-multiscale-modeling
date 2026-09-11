@@ -1,0 +1,4 @@
+time_interval_ps,comparison,interpretation,max_abs_displacement_error_nm,rms_displacement_error_nm,terminal_max_abs_displacement_error_nm,max_abs_native_velocity_error_nm_per_ps,rms_native_velocity_error_nm_per_ps,terminal_max_abs_native_velocity_error_nm_per_ps
+0-0.3,Re-lifted BE vs unprojected BE,Projection choice,2.5028538750205545e-05,1.2058141166280536e-05,1.336921709484476e-05,0.0006327143419847664,0.00019028285940370023,0.0006327143419847664
+0-0.3,Unprojected BE vs full Lennard-Jones,Current classical accuracy,0.00013334400235791603,6.11849381109713e-05,0.00013334400235791603,0.001568574084095116,0.0006222301048326529,0.001568574084095116
+0-0.3,Re-lifted BE vs full Lennard-Jones,Re-lifted sensitivity accuracy,0.00015167995292748176,7.060378128151956e-05,0.00013813635868232155,0.0022012884260798823,0.0007742391551031119,0.0022012884260798823

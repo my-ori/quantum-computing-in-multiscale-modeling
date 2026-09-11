@@ -1,0 +1,6 @@
+comparison,error_isolated,max_abs_displacement_error_nm,rms_displacement_error_nm,max_abs_velocity_error_nm_per_ps,rms_velocity_error_nm_per_ps
+Quadratic-force nonlinear vs full Lennard-Jones,Force expansion,1.940239518322985e-05,1.0913926035997394e-05,0.0002706408252992065,0.00012662731652197191
+Continuous K=2 Carleman vs quadratic-force nonlinear,Carleman truncation,1.7966110410207355e-05,7.922521271214e-06,0.0005387074026716107,0.00018250422146608326
+Backward Euler K=2 vs continuous K=2 Carleman,Time discretization,0.0001399330877752871,6.190263849990673e-05,0.0015000873034047152,0.0007162735992362421
+VQLS vs backward Euler K=2,VQLS/optimization,0.00028140747533949174,0.0001301805463171975,0.0019597233827258406,0.0011101874157140896
+VQLS vs full Lennard-Jones,Total,0.0004087210764469958,0.00016826626240441482,0.002874450939982766,0.0014845944067693963

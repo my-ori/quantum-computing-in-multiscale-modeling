@@ -1,0 +1,23 @@
+{
+  "vqls_level": "shot-free analytic PennyLane Pauli-Hamiltonian VQLS",
+  "ansatz_type": "direct signed controlled-Ry real-amplitude tree",
+  "pennylane_version": "0.42.3",
+  "device_requested": "lightning.qubit",
+  "optimizer": "scipy-lbfgsb",
+  "maxiter": 300,
+  "coefficient_tol": 1e-10,
+  "rng_seed": 7,
+  "n_steps": 200,
+  "N": 3,
+  "dt": 0.002,
+  "c1": 118.79999999999993,
+  "c2": -1247.3999999999992,
+  "n_orig": 42,
+  "qdim": 64,
+  "direct_trial_dim": 64,
+  "qb_physical": 6,
+  "qb_quantum": 6,
+  "denominator_pauli_terms": 1610,
+  "padding_mode": "identity",
+  "classical_check_interval": 1
+}

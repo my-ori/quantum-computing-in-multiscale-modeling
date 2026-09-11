@@ -1,0 +1,39 @@
+{
+  "release_id": "case3-validation-second-revision-20260910",
+  "python": "3.12.13",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "h5py": "3.16.0",
+  "elapsed_seconds": 2.3611481029999997,
+  "verification": {
+    "all_archived_results_reproduced": true,
+    "rtol": 1e-09,
+    "atol": 1e-12,
+    "maximum_absolute_differences": {
+      "case3_carleman_consistency_by_time.csv": 0.0,
+      "case3_carleman_consistency_summary.csv": 0.0,
+      "case3_consistency_states.npz": 0.0,
+      "case3_error_decomposition_by_time.csv": 0.0,
+      "case3_error_decomposition_summary.csv": 0.0,
+      "case3_projection_sensitivity_summary.csv": 0.0,
+      "case3_projection_trajectories.csv": 0.0,
+      "case3_reference_states.npz": 0.0,
+      "case3_validation_trajectories.csv": 0.0,
+      "retained_vqls_terminal_consistency.csv": 0.0,
+      "table7.csv": 0.0,
+      "table8.csv": 0.0
+    },
+    "independent_checks": {
+      "matrix_rebuilt_from_physical_parameters": true,
+      "continuous_terminal_matches_direct_matrix_exponential": true,
+      "backward_euler_recurrence_verified": true,
+      "retained_vqls_displacements_unchanged": true,
+      "projection_preserves_first_order_state": true,
+      "projected_second_order_state_exact_kron": true,
+      "retained_terminal_state_is_0_400_ps_not_table8": true,
+      "public_figure6_series_reproduced": true,
+      "public_figure7_costs_match_at_published_precision": true
+    }
+  }
+}

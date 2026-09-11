@@ -34,9 +34,18 @@ linear ordinary differential equations.
 │   ├── 1Ddynamic_BCOW_VQLS_restarted_pennylane.py
 │   ├── 1Ddynamic_BCOW_VQLS_boundary_reduced_pennylane.py
 │   └── runcommand_case2.txt
-└── case3/
-    ├── case3_carleman_pennylane_vqls_direct_signed.py
-    └── runcommand_case3.txt
+├── case3/
+│   ├── case3_carleman_pennylane_vqls_direct_signed.py
+│   └── runcommand_case3.txt
+├── data_of_figures/
+│   └── figure*.csv
+└── reproducibility/
+    └── case3/
+        ├── reproduce.py
+        ├── inputs/
+        ├── scripts/
+        ├── results/
+        └── provenance/
 ```
 
 The additional Case 2 programs provide the classical BCOW construction, a
@@ -44,9 +53,26 @@ single-window VQLS implementation, and a full restarted VQLS implementation.
 Keep all four Case 2 Python files together because the VQLS drivers load sibling
 modules at runtime.
 
+## Nonlinear validation for the second revision
+
+The [Case III validation archive](reproducibility/case3/README.md) contains the exact retained inputs, full Lennard-Jones and quadratic-force DOP853 integrations, continuous and backward-Euler Carleman trajectories, and the retained VQLS trajectory. It also includes complete projected and unprojected classical states, re-lifted sensitivity trajectories, and the scripts and machine-readable data needed to regenerate Tables 7 and 8.
+
+From the repository root, run:
+
+```bash
+python -m pip install -r reproducibility/case3/requirements.txt
+python -B reproducibility/case3/reproduce.py
+```
+
+This command verifies the SHA-256 manifest, regenerates the validation results and table fragments, and compares all archived result files. Generated files and a new verification report are written to `reproducibility/case3/reproduced/`. Only NumPy, SciPy, and h5py are required after Python is installed; the command reads the retained VQLS results without repeating the optimizations.
+
+The archive uses the original PennyLane 0.42.3 `lightning.qubit` accuracy artifact. The subsequent PennyLane 0.45.0 GPU run supplied resource measurements. The archive README explains these sources, the 0-0.300 ps reporting interval, and the common backward-difference velocity reconstruction. Its table builder also generates the Figure 6 comparison and full-precision Figure 7 costs. Existing public series are in `data_of_figures/figure6a_6b_data.csv` and `data_of_figures/figure7_data.csv`.
+
+For the manuscript citation, use the immutable repository commit that contains this validation archive. The earlier solver snapshot listed in the provenance file is a separate source record.
+
 ## Environment
 
-The target environment used by the scripts is:
+The target environment used by the original VQLS solver scripts is:
 
 - Python 3.12.13
 - PennyLane 0.45.0

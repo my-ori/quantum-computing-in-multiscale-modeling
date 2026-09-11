@@ -1,0 +1,5 @@
+trajectory,time_interval_ps,max_eta,terminal_eta,max_eta_relative,terminal_eta_relative
+Continuous K=2 Carleman,0-0.3,0.0005852080736989397,0.0003275459711055202,0.16262918410279925,0.08780808464199336
+"Backward Euler K=2, unprojected",0-0.3,0.0005382139512458735,0.00032359466398752855,0.1544673605538788,0.0931992881752016
+"Backward Euler K=2, re-lifted (before projection)",0-0.3,9.119442922757424e-06,7.013921257108083e-06,0.032308782948202386,0.002050855412456532
+"Backward Euler K=2, re-lifted (after projection)",0-0.3,0.0,0.0,0.0,0.0

@@ -1,0 +1,27 @@
+{
+  "release_id": "case3-validation-second-revision-20260910",
+  "n_steps": 150,
+  "dt_ps": 0.002,
+  "atom_count": 3,
+  "spacing_nm": 1.0,
+  "epsilon_aJ": 1.65,
+  "mass_in_1e_minus24_kg": 1.993,
+  "initial_displacement_nm": [
+    0.01,
+    0.0,
+    0.0
+  ],
+  "initial_velocity_nm_per_ps": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "nonlinear_reference_solver": "DOP853",
+  "rtol": 1e-12,
+  "atol": 1e-14,
+  "carleman_order": 2,
+  "lift_ordering": "Y=[z;kron(z,z)], z=[q0,q1,q2,v0,v1,v2]",
+  "velocity_comparison_rule": "backward differences after frame 0; prescribed zero at frame 0",
+  "retained_artifact_steps": 200,
+  "retained_terminal_time_ps": 0.4
+}

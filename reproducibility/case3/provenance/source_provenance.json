@@ -1,0 +1,20 @@
+{
+  "repository": "my-ori/quantum-computing-in-multiscale-modeling",
+  "commit": "975ab6ad5a81fb9a455842255463456316a78810",
+  "archive_sha256": "ba546c8187cf57b05f25d05faffca27c21e73da912579e0f285deb289f806f26",
+  "meaning": "Earlier public repository snapshot used to preserve the solver source and original figure inputs; not the new validation release commit",
+  "public_solver_sha256": "ea0ec4c7b3cfd46b38396985e6607c8c77915dac44d606926b4652c32ae6e487",
+  "original_validation_script_sha256": {
+    "case3_error_decomposition.py": "35125aadbb5693c737dde8782664e434223b74ff676adad664436f6cf86634c1",
+    "case3_carleman_consistency.py": "3bced0dece2f30a6a6fa6474ff71759b1b6652b55ba58ee0dcca0730266d7dbb"
+  },
+  "historical_validation_solver_source_commit": null,
+  "historical_solver_commit_note": "The retained 0.42.3 CPU artifact does not record a Git commit. Its exact input bytes and metadata are archived; the public solver snapshot is not claimed to be the historical generating version.",
+  "repository_state_checked_before_upload": {
+    "commit": "ecd080bb44003c2f733020df31bd14ac27d1eb20",
+    "archive_sha256": "0b64678c0e3470bb458055838b348a5d0d71c795a43ff4e08aab5b56f46313e8",
+    "current_figure6_path": "data_of_figures/figure6a_6b_data.csv",
+    "current_figure7_path": "data_of_figures/figure7_data.csv",
+    "note": "This is the pre-upload repository state, not the commit containing the new validation archive."
+  }
+}
